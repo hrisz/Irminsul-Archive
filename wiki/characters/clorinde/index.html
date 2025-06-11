@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clorinde | Irminsul Archive</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-cover bg-center bg-no-repeat bg-[url('../../assets/img/indexbg.webp')] scrollbar-dark">
+    <nav class="navbar fixed z-10 backdrop-blur-lg bg-black/60 flex items-center justify-between h-14 px-4 w-full gap-4">
+        <img class="w-10 rounded-md" src="../../../assets/icon/irminsulArch.webp" alt="icon">
+        <p class="text-white main-font md:text-md sm:text-md text-sm">Irminsul Archive</p>
+        <div class="flex gap-2 ml-auto pr-5">
+            <a class="text-white main-font h-14 lg:flex md:flex items-center border-4 border-transparent hover:border-b-sky-500 px-2 hidden" href="#"><span><img class="w-5" src="../../../assets/icon/char.png" alt=""></span>&nbsp;Character</a>
+            <a class="text-white main-font h-14 lg:flex md:flex items-center border-4 border-transparent hover:border-b-sky-500 px-2 hidden" href="#"><span><img class="w-8" src="../../../assets/icon/weapon.webp" alt=""></span>&nbsp;Weapon</a>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white main-font h-14 flex items-center border-4 border-transparent hover:border-b-sky-500 px-2" type="button">More <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+                
+            <div id="dropdown" class="z-10 hidden main-font bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li class="lg:hidden md:hidden block">
+                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/char.png" width="20" alt=""></span>Character</a>
+                    </li>
+                    <li class="lg:hidden md:hidden block">
+                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/weapon.webp" width="20" alt=""></span>Weapon</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/artifact.webp" width="20" alt=""></span>Artifact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/build.webp" width="20" alt=""></span>Builds</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/quest.webp" width="20" alt=""></span>Quest</a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/tutorial.webp" width="20" alt=""></span>Puzzle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="md:h-[100dvh] grid md:grid-cols-[30%_1fr] grid-rows-[1fr] gap-y-[10px] gap-x-[10px] pt-16 px-2 pb-2">
+        <div id="character-card" class="bg-slate-700/85 overflow-x-hidden backdrop-blur-md flex flex-col gap-y-4 justify-center items-center rounded-lg lg:p-6 md:p-6 sm:p-10 p-8 overflow-y-auto">
+            <img src="../../../assets/icon/char_card/Clorinde_Item.webp" class="w-52" alt="">
+            <div class="sideaccs main-font text-white text-center mt-2">
+                <h1 class="lg:text-2xl md:text-xl sm:text-lg text-md">Clorinde</h1>
+            </div>
+            <div class="team-role main-font text-white text-sm">
+                <ul class="flex flex-wrap gap-2 whitespace-nowrap text-ellipsis">
+                    <li><p class="text-white bg-red-600 px-2 rounded-md">DPS</p></li>
+                    <li><p class="text-white bg-orange-500 px-2 rounded-md">On-Field</p></li>
+                </ul>
+            </div>
+            <div id="chr-card-info" class="bg-slate-800 main-font whitespace-nowrap overflow-auto flex w-full p-6 rounded-lg flex-col gap-y-1 text-white text-sm">
+                <p class="main-font text-gray-400 flex items-center">Element :&nbsp;<span class="flex text-white items-center"><img src="../../../../assets/icon/Element_Electro.webp" class="w-5 h-5" alt="">&nbsp;Electro</span>&nbsp;</p>
+                <p class="main-font text-gray-400 flex items-center">Rarity :&nbsp;<span><img src="../../../../assets/icon/Icon_5_Stars.webp" width="80" alt=""></span></p>
+                <p class="main-font text-gray-400 flex items-center">Weapon :&nbsp;<span class="flex text-white items-center"><img src="../../../../assets/icon/Icon_Sword.webp" width="25" alt="">&nbsp;Sword</span></p>
+                <p class="main-font text-gray-400 flex">Constellation :&nbsp;<span class="text-white">Rapperia</span></p>
+                <p class="main-font text-[#f4ac45] flex pt-2 md:text-md sm:text-md text-sm">Personal Information</p>
+                <hr class="pb-2">
+                <p class="main-font text-gray-400 flex">Region :&nbsp;<span class="text-white">Fontaine</span></p>
+                <p class="main-font text-gray-400 flex">Affiliation :&nbsp;<span class="text-white">Trial Court</span></p>
+                <p class="main-font text-gray-400 flex">Birthday :&nbsp;<span class="text-white">September 20th</span></p>
+                <p class="main-font text-gray-400 flex">Special Dish :&nbsp;<span class="text-white">Tagged and Bagged</span></p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-y-2 overflow-hidden">
+            <nav class="chr-nav flex pb-2 whitespace-nowrap">
+                <ul class="flex gap-x-4 overflow-x-auto scrollbar-dark">
+                    <li class="bg-slate-800/80 hover:bg-[#f4ac45] backdrop-blur-md rounded-lg px-4 py-2 main-font text-[#f4ac45] hover:text-slate-800">
+                        <a href="#">Character Info</a>
+                    </li>
+                    <li class="bg-slate-800/80 hover:bg-[#f4ac45] backdrop-blur-md rounded-lg px-4 py-2 main-font text-[#f4ac45] hover:text-slate-800">
+                        <a href="#">Builds</a>
+                    </li>
+                    <li class="bg-slate-800/80 hover:bg-[#f4ac45] backdrop-blur-md rounded-lg px-4 py-2 main-font text-[#f4ac45] hover:text-slate-800">
+                        <a href="#">Voice Lines</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="character-info" class="bg-slate-700/85 backdrop-blur-md overflow-auto rounded-lg py-6 lg:px-24 md:px-20 sm:px-16 px-12 flex flex-col gap-y-4">
+                <div class="chrinfo-title main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
+                    <h1 class="flex justify-center items-center">Character Appearance</h1>
+                </div>
+                <div class="appearance-content main-font text-white lg:text-sm md:text-sm sm:text-sm text-xs pb-6 leading-6"">
+                    <p>Clorinde uses the tall female model. She has long dark blue-dark purplish hair with a lighter blue streak styled in a low ponytail with some of her hair partially covering her right eye and bright purple eyes.</p>
+                </div>
+
+                <div class="introduce-title main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
+                    <h1 class="flex justify-center items-center">Official Introduction</h1>
+                </div>
+
+                <div class="appearance-content main-font text-white lg:text-sm md:text-sm sm:text-sm text-xs pb-6 leading-6">
+                    <p>Disputes are a Mora a dozen in Fontaine, day in and day out. <br /><br /> playwright might accuse a fanatical reader of imitating their style and taking up a pen name too close to their own, to the point that even the newspapers could not distinguish the genuine article.
+                        A merchant might accuse a colleague of targeted, malicious, cutthroat competition, of not only constantly adjusting their prices, but of intentionally setting up shop directly opposite them... <br><br> Ordinary disputes can be settled by Gardes rushing onto the scene, but there are always a minority of claimants who, thinking themselves most clever in their ulterior intent, will obstinately press for court proceedings just to get their name out there — and if their duel applications were to be approved, they might be famous indeed!
+                        <br><br>However, if some well-meaning neighbor were to tell them: "I've heard that the most recently rostered Champion Duelist is Miss Clorinde..."
+                        <br><br>These same clever folk would almost instantly be deflated of all their arrogant airs, like a Violetgold Angler Gull caught by the neck, and cease such prattle altogether.
+                        <br><br>For all are well-acquainted with the name of the "mightiest" Champion Duelist.
+                        <br><br>Beneath her blade, all despicable deeds that aim to capitalize on mere fortune under the guise of decency will show their true colors — and she has never once known defeat in a duel.
+                        <br><br>"...Ahem. Oh, uh... I suppose there's no need to go that far, is there?
+                        So does a clever person, very nearly hoisted by their own petard, flee the scene.
+                        And thus is another such altercation, undercut by ulteriority, discreetly dissipated.
+                    </p>
+                </div>
+
+                <div class="chr-story-title main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
+                    <h1 class="flex justify-center items-center">Character Story</h1>
+                </div>
+
+                <div class="appearance-content main-font text-white lg:text-sm md:text-sm sm:text-sm text-xs leading-6">
+                    <p>Disputes are a Mora a dozen in Fontaine, day in and day out. <br><br>
+                        A confectioner might accuse another of stealing their recipe — and not only that, but replacing Bulle Fruit peel with Mint, thus bringing disgrace not only upon themselves, but upon the very dessert itself! Or a playwright might accuse a fanatical reader of imitating their style and taking up a pen name too close to their own, to the point that even the newspapers could not distinguish the genuine article. A merchant might accuse a colleague of targeted, malicious, cutthroat competition, of not only constantly adjusting their prices, but of intentionally setting up shop directly opposite them... <br><br>
+                        Almost everyone claims to be wholly in the right, appealing incessantly for the support of passersby in the hope of swaying the crowd and winning their case in the court of public opinion. <br><br>
+                        Most of the time, such disputes are settled with relative ease, either by Gardes or by Gestionnaires rushing onto the scene. But there will always be a minority of claimants who, acting with ulterior intentions, will obstinately press for court proceedings just to get their name out there. <br><br>
+                        "I'll see you in court!" comes the challenge. When things reach this stage, any hope that the voice of reason might prevail starts to buckle under the unstoppable force of emotion, neither side willing to give an inch as they begin to square off for a legal showdown. <br><br>
+                        Until, that is, an exasperated Gestionnaire standing by — long since having given up any hope of successful mediation — interjects in a tone of despair: <br><br>
+                        "Alright, I respect your right to take this to the courts. But before you do, you must make the following preparations..." <br><br>
+                        "...Once judgment is pronounced, if you believe the verdict to be unjust, you may propose that the matter be settled by a duel." <br><br>
+                        "To my knowledge, the most recently rostered Champion Duelist is Miss Clorinde..." <br><br>
+                        As soon as the name of Clorinde is mentioned, all bickering comes to an abrupt halt. <br><br>
+                        For all are well-acquainted with the name of this undefeated Champion Duelist. Beneath her blade, all despicable deeds that aim to capitalize on mere fortune under the guise of decency will show their true colors — and she has never once known defeat in a duel. <br><br>
+                        "...Ahem. Oh, uh... I suppose there's no need to go that far, is there?" <br><br>
+                        Thus are such marketplace altercations, undercut by ulteriority, temporarily dissipated. Watching the two self-seeking merchants leave the scene with their tails between their legs, the Gestionnaire lets out a knowing laugh, then gives the younger, still uncomprehending colleague beside them a pat on the arm, and says: <br><br>
+                        "You see, the sword is mightier than the pen, after all."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
