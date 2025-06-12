@@ -9,25 +9,72 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body class="bg-cover bg-center bg-no-repeat bg-[url('../../assets/img/indexbg.webp')] scrollbar-dark">
-    <nav class="navbar fixed z-10 backdrop-blur-lg bg-black/60 flex items-center justify-between h-14 px-4 w-full gap-4">
+    <nav class="navbar fixed z-50 backdrop-blur-lg bg-black/60 flex items-center justify-between h-14 px-4 w-full gap-4">
+    
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6 lg:hidden md:hidden block" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <div id="drawer-navigation" class="main-font bg-slate-900 fixed top-0 left-0 z-50 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full" tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <h5 id="drawer-navigation-label" class="text-base text-white flex items-center gap-2"><span><img src="../../../assets/icon/sidebaricon.webp" width="25" alt=""></span>Navigation</h5>
+            <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class=" text-white hover:text-[#221c16] bg-transparent hover:bg-gray-200 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center" >
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close menu</span>
+            </button>
+            <hr class="border border-white my-2 rounded-md">
+            <div class="overflow-y-auto">
+                <ul class="space-y-1 font-medium">
+                    <li>
+                        <a href="#" class="flex gap-1 items-center p-2 rounded-lg text-white hover:bg-slate-800 group">
+                        <img src="../../../assets/icon/char.png" class="w-6" alt="">
+                        <span class="ms-3">Character</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-1 items-center p-2 rounded-lg text-white hover:bg-slate-800 group">
+                        <img src="../../../assets/icon/weapon.webp" class="w-6" alt="">
+                        <span class="ms-3">Weapon</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-1 items-center p-2 rounded-lg text-white hover:bg-slate-800 group">
+                        <img src="../../../assets/icon/artifact.webp" class="w-6" alt="">
+                        <span class="ms-3">Artifact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-1 items-center p-2 rounded-lg text-white hover:bg-slate-800 group">
+                        <img src="../../../assets/icon/build.webp" class="w-6" alt="">
+                        <span class="ms-3">Builds</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-1 items-center p-2 rounded-lg text-white hover:bg-slate-800 group">
+                        <img src="../../../assets/icon/quest.webp" class="w-6" alt="">
+                        <span class="ms-3">Quest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex gap-1 items-center p-2 rounded-lg text-white hover:bg-slate-800 group">
+                        <img src="../../../assets/icon/tutorial.webp" class="w-6" alt="">
+                        <span class="ms-3">Puzzle</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <img class="w-10 rounded-md" src="../../../assets/icon/irminsulArch.webp" alt="icon">
         <p class="text-white main-font md:text-md sm:text-md text-sm">Irminsul Archive</p>
         <div class="flex gap-2 ml-auto pr-5">
             <a class="text-white main-font h-14 lg:flex md:flex items-center border-4 border-transparent hover:border-b-sky-500 px-2 hidden" href="#"><span><img class="w-5" src="../../../assets/icon/char.png" alt=""></span>&nbsp;Character</a>
             <a class="text-white main-font h-14 lg:flex md:flex items-center border-4 border-transparent hover:border-b-sky-500 px-2 hidden" href="#"><span><img class="w-8" src="../../../assets/icon/weapon.webp" alt=""></span>&nbsp;Weapon</a>
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white main-font h-14 flex items-center border-4 border-transparent hover:border-b-sky-500 px-2" type="button">More <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="lg:flex md:flex hidden text-white main-font h-14 items-center border-4 border-transparent hover:border-b-sky-500 px-2" type="button">More <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
             </button>
                 
             <div id="dropdown" class="z-10 hidden main-font bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                    <li class="lg:hidden md:hidden block">
-                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/char.png" width="20" alt=""></span>Character</a>
-                    </li>
-                    <li class="lg:hidden md:hidden block">
-                        <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/weapon.webp" width="20" alt=""></span>Weapon</a>
-                    </li>
                     <li>
                         <a href="#" class="flex px-4 py-2 hover:bg-gray-600 dark:hover:text-white items-center gap-2"><span><img src="../../../assets/icon/artifact.webp" width="20" alt=""></span>Artifact</a>
                     </li>
@@ -46,9 +93,9 @@
     </nav>
     <div class="md:h-[100dvh] grid md:grid-cols-[30%_1fr] grid-rows-[1fr] gap-y-[10px] gap-x-[10px] pt-16 px-2 pb-2">
         <div id="character-card" class="bg-slate-700/85 overflow-x-hidden backdrop-blur-md flex flex-col gap-y-4 justify-center items-center rounded-lg lg:p-6 md:p-6 sm:p-10 p-8 overflow-y-auto">
-            <img src="../../../assets/icon/char_card/Clorinde_Item.webp" class="w-52" alt="">
+            <img src="../../../assets/icon/char_card/Clorinde_Item.webp" class="lg:w-52 md:w-48 sm:w-40 w-36" alt="">
             <div class="sideaccs main-font text-white text-center mt-2">
-                <h1 class="lg:text-2xl md:text-xl sm:text-lg text-md">Clorinde</h1>
+                <h1 class="lg:text-2xl md:text-xl text-lg">Clorinde</h1>
             </div>
             <div class="team-role main-font text-white text-sm">
                 <ul class="flex flex-wrap gap-2 whitespace-nowrap text-ellipsis">
@@ -66,7 +113,7 @@
                 <p class="main-font text-gray-400 flex">Region :&nbsp;<span class="text-white">Fontaine</span></p>
                 <p class="main-font text-gray-400 flex">Affiliation :&nbsp;<span class="text-white">Trial Court</span></p>
                 <p class="main-font text-gray-400 flex">Birthday :&nbsp;<span class="text-white">September 20th</span></p>
-                <p class="main-font text-gray-400 flex">Special Dish :&nbsp;<span class="text-white">Tagged and Bagged</span></p>
+                <p class="main-font text-gray-400 flex">Special Dish :&nbsp;<span class="text-white pr-2">Tagged and Bagged</span></p>
             </div>
         </div>
         <div class="flex flex-col gap-y-2 overflow-hidden">
@@ -84,7 +131,7 @@
                 </ul>
             </nav>
             <div id="character-info" class="bg-slate-700/85 backdrop-blur-md overflow-auto rounded-lg py-6 lg:px-24 md:px-20 sm:px-16 px-12 flex flex-col gap-y-4">
-                <div class="chrinfo-title main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
+                <div class="main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
                     <h1 class="flex justify-center items-center">Character Appearance</h1>
                 </div>
                 <div class="appearance-content main-font text-white lg:text-sm md:text-sm sm:text-sm text-xs pb-6 leading-6"">
@@ -108,7 +155,7 @@
                     </p>
                 </div>
 
-                <div class="chr-story-title main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
+                <div id="character-story" class="main-font text-[#f4ac45] bg-slate-800 py-2 rounded-lg lg:text-2xl md:text-xl sm:text-lg text-md text-center">
                     <h1 class="flex justify-center items-center">Character Story</h1>
                 </div>
 
